@@ -2,7 +2,7 @@
 	<h1>🛰️ DJI Offline Map Helper</h1>
 	<p><strong>Simple guide to create & update offline map areas for your DJI controller.</strong></p>
 	<p>No coding. No editing JSON by hand. Just import → adjust → export.</p>
-    <p>Open the tool directly in your <a href="https://markus1812.github.io/dji-offline-map-helper/">browser</a>.</p>
+    <p>Open the tool directly in your <a target="_blank" href="https://markus1812.github.io/dji-offline-map-helper/">browser</a>.</p>
 </div>
 
 ---
