@@ -59,6 +59,8 @@ Copy this file to your computer and make a backup, before modifying the file wit
 3. Rename the old file to something like `config.backup.json` (just in case).
 4. Copy your new `config.json` into that folder.
 5. Fully close the DJI Fly app (or reboot the controller) so it reloads the areas.
+6. Open the DJI Fly app, go to your profile, go into offline maps.
+7. The newly created or modified offline maps should show up and need to be downloaded again. (It can take some seconds or even minutes until the DJI app shows the offline maps)
 
 ---
 
