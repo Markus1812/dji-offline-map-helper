@@ -2,6 +2,7 @@
 	<h1>🛰️ DJI Offline Map Helper</h1>
 	<p><strong>Simple guide to create & update offline map areas for your DJI controller.</strong></p>
 	<p>No coding. No editing JSON by hand. Just import → adjust → export.</p>
+    <p>Open the tool directly in your [browser](https://markus1812.github.io/dji-offline-map-helper/).</p>
 </div>
 
 ---
@@ -38,7 +39,7 @@ Copy this file to your computer and make a backup, before modifying the file wit
 ---
 
 ## 🧭 Using The Website/App
-1. Open the site (here)[https://github...].
+1. Open the site [here](https://markus1812.github.io/dji-offline-map-helper/).
 2. Click **Import** and choose your saved `config.json`.
 3. Your existing offline areas appear as blue rectangles.
 4. To add a new area: use the rectangle drawing tool on the map (top-right tool palette). Click and drag.

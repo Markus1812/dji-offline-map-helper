@@ -112,7 +112,7 @@ function App() {
 
   const handleExport = () => {
     if (!rectangles.length) {
-      alert('No rectangles to export');
+      alert('No iffline maps to export');
       return;
     }
     const payload = rectangles.map(r => {
@@ -185,7 +185,7 @@ function App() {
           setRectangles(prev => [...prev, ...newRects]);
           alert(`Imported ${newRects.length} rectangle(s).`);
         } else {
-          alert('No valid rectangles found in file.');
+          alert('No valid offline maps found in file.');
         }
       } catch (err) {
         alert('Failed to import: ' + err.message);
@@ -230,15 +230,15 @@ function App() {
             };
             return <RectangleItem key={rect.id} rect={rect} zoomToRectangle={zoomToRectangle} updateRectangle={updateRectangle} />;
           })}
-          {rectangles.length === 0 && <div className="no-rectangles">No rectangles created yet</div>}
+          {rectangles.length === 0 && <div className="no-rectangles">No offline maps created yet</div>}
         </div>
         <details style={{ marginTop: '10px', fontSize: '12px' }}>
           <summary style={{ cursor: 'pointer', fontWeight: 600 }}>How to use</summary>
           <ol style={{ paddingLeft: '18px', margin: '6px 0' }}>
             <li>Click <strong>Import</strong> and choose your DJI <code>config.json</code>.</li>
             <li>Use the blue rectangle tool (top-right of map) to draw new offline map areas.</li>
-            <li>Name each rectangle when prompted (blank = default name).</li>
-            <li>Click a rectangle entry below to zoom to it.</li>
+            <li>Name each offline map when prompted (blank = default name).</li>
+            <li>Click a offline map entry below to zoom to it.</li>
             <li>Use the edit/delete controls to adjust existing areas.</li>
             <li>Press <strong>Export</strong> to download the updated <code>config.json</code>.</li>
           </ol>
