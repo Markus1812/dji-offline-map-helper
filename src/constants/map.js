@@ -37,5 +37,5 @@ export const INITIAL_MAP = L.latLngBounds(
 
 export const DJI_CONFIG_PATH_PRIMARY = 'Android/data/dji.go.v5/files/DJI/tiles/config.json';
 
-export const TILE_WARNING_THRESHOLD = 150_000;
-export const TILE_DANGER_THRESHOLD = 300_000;
+export const TILE_WARNING_THRESHOLD = 5_000;
+export const TILE_DANGER_THRESHOLD = 10_000;

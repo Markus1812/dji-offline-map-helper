@@ -67,7 +67,7 @@ export function UniqueTilesSummary({ summary, computing }) {
             )}
             {!computing && !summary.aborted && (
                 <div style={{ marginTop: '8px', fontSize: '10px', lineHeight: 1.3, color: '#555' }}>
-                    Guidance: Keep unique tiles ideally &lt; 150k (safe), 150k–300k can become slow, &gt;300k may cause DJI RC/Fly map cache issues or crashes. Reduce area or max zoom if too high.
+                    Guidance: Keep unique tiles ideally &lt; 5k (safe), 5k–10k can become slow, &gt;10k may cause DJI RC/Fly map cache issues or crashes. Reduce area or max zoom if too high.
                 </div>
             )}
             {computing && (
