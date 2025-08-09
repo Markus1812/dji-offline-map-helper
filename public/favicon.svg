@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Simple, crisp icon optimized for small sizes -->
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0F4C81"/>
+      <stop offset="100%" stop-color="#1C78D0"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFD95E"/>
+      <stop offset="100%" stop-color="#FF9E2C"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" />
+  <!-- Sparse tile grid (keep minimal for 16px clarity) -->
+  <g stroke="#ffffff30" stroke-width="1">
+    <path d="M22 8v48M42 8v48M8 22h48M8 42h48" />
+  </g>
+  <!-- Map pin (center) -->
+  <path fill="url(#pin)" stroke="#C66A00" stroke-width="1.5" d="M32 15c-7 0-12.5 5.4-12.5 12.2 0 8.7 10 19.3 11.6 20.9a1.5 1.5 0 0 0 1.8 0c1.6-1.6 11.6-12.2 11.6-20.9C44.5 20.4 39 15 32 15Z" />
+  <!-- Inner circle / drone cross -->
+  <circle cx="32" cy="27.5" r="5.2" fill="#fff" />
+  <g stroke="#0F4C81" stroke-width="1.2" stroke-linecap="round">
+    <path d="M29.2 27.5h5.6M32 24.7v5.6" />
+  </g>
+  <!-- Subtle highlight -->
+  <path d="M32 15c-7 0-12.5 5.4-12.5 12.2 0 1 .1 2 .3 2.9C20.8 23 26 18 32 18c6 0 11.2 5 12.2 12.1.2-.9.3-1.9.3-2.9C44.5 20.4 39 15 32 15Z" fill="#ffffff18" />
+</svg>

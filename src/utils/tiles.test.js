@@ -57,12 +57,12 @@ describe('computeUniqueTileSummary', () => {
 
 describe('applyTileWarnings', () => {
     it('ok below warning', () => {
-        expect(applyTileWarnings(10_000).level).toBe('ok');
+        expect(applyTileWarnings(4_000).level).toBe('ok');
     });
     it('warn in middle range', () => {
-        expect(applyTileWarnings(200_000).level).toBe('warn');
+        expect(applyTileWarnings(7_000).level).toBe('warn');
     });
     it('danger above danger threshold', () => {
-        expect(applyTileWarnings(400_000).level).toBe('danger');
+        expect(applyTileWarnings(11_000).level).toBe('danger');
     });
 });

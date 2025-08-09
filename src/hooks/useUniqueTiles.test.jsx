@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react';
+import { act, renderHook, waitFor } from '@testing-library/react';
 import L from 'leaflet';
 import { describe, expect, it } from 'vitest';
 import { useUniqueTiles } from './useUniqueTiles';
@@ -22,8 +22,8 @@ describe('useUniqueTiles', () => {
             rerender({ rects: [makeRect(1)] });
         });
 
-        // Wait for debounce (15ms) + tick
-        await new Promise(r => setTimeout(r, 40));
-        expect(result.current.summary.total).toBeGreaterThan(0);
+        await waitFor(() => {
+            expect(result.current.summary.total).toBeGreaterThan(0);
+        });
     });
 });
