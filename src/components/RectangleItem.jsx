@@ -45,8 +45,8 @@ export function RectangleItem({ rect, zoomToRectangle, updateRectangle }) {
                         <input
                             type="number"
                             className="map-input"
-                            min={0}
-                            max={22}
+                            min={1}
+                            max={17}
                             value={rect.minZoom ?? 1}
                             onChange={e => {
                                 const v = parseInt(e.target.value, 10);
@@ -63,8 +63,8 @@ export function RectangleItem({ rect, zoomToRectangle, updateRectangle }) {
                         <input
                             type="number"
                             className="map-input"
-                            min={0}
-                            max={22}
+                            min={1}
+                            max={17}
                             value={rect.maxZoom ?? 17}
                             onChange={e => {
                                 const v = parseInt(e.target.value, 10);

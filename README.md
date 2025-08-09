@@ -18,6 +18,8 @@ DJI controllers store offline map areas in a small file called <code>config.json
 
 You never have to open or understand the JSON itself. 😊
 
+<p align="center"><img src="images/sidebar-with-map.png" alt="Main interface with map and sidebar" width="720"></p>
+
 ---
 
 ## ✅ Tested Devices
@@ -48,7 +50,11 @@ Copy this file to your computer and make a backup, before modifying the file wit
 	 * Change the name later.
 	 * Adjust minimum & maximum zoom (higher max zoom = more detail = many more tiles).
 	 * See tile counts. “Unique Tiles” at the top is the total across everything (overlapping areas don’t double-count).
+   
+	<img src="images/sidebar-detail.png" alt="Rectangle detail editing (name + zoom + per-zoom tiles)" width="250px"/>
 7. If the warning text turns orange or red your map set might be too big—reduce the size or the max zoom of some areas.
+   
+	<img src="images/sidebar-all-tiles.png" alt="Unique tiles summary with warning levels" width="200px"/>
 8. Done? Click **Export**. A new `config.json` downloads to your computer.
 
 ---
@@ -64,7 +70,7 @@ Copy this file to your computer and make a backup, before modifying the file wit
 
 ---
 
-## 🚦 Tile Size Warnings (Plain English)
+## 🚦 Tile Size Warnings
 Think of “tiles” as tiny map squares the controller has to store.
 
 | Total Unique Tiles | Meaning |

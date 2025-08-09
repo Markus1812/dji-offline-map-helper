@@ -12,7 +12,6 @@ export function UniqueTilesSummary({ summary, computing }) {
         }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
                 <strong style={{ fontSize: '13px' }}>Unique Tiles (all rectangles)</strong>
-                <span style={{ fontSize: '11px', color: '#555' }}>{computing ? 'Computing…' : 'Auto'}</span>
             </div>
             {!computing && summary.aborted && (
                 <div style={{ fontSize: '11px', color: '#a00', marginTop: '6px' }}>
